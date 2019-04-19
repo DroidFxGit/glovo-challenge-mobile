@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		527D98F1226A5A6F00DBBEF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D98F0226A5A6F00DBBEF0 /* AppDelegate.swift */; };
-		527D98F3226A5A6F00DBBEF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D98F2226A5A6F00DBBEF0 /* ViewController.swift */; };
-		527D98F6226A5A6F00DBBEF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527D98F4226A5A6F00DBBEF0 /* Main.storyboard */; };
 		527D98F8226A5A7100DBBEF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527D98F7226A5A7100DBBEF0 /* Assets.xcassets */; };
 		527D98FB226A5A7100DBBEF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527D98F9226A5A7100DBBEF0 /* LaunchScreen.storyboard */; };
 		527D9906226A5A7100DBBEF0 /* Glovo_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D9905226A5A7100DBBEF0 /* Glovo_ChallengeTests.swift */; };
+		527D9913226A679400DBBEF0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D9911226A679400DBBEF0 /* MainViewController.swift */; };
+		527D9914226A679400DBBEF0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527D9912226A679400DBBEF0 /* MainViewController.xib */; };
+		527D9918226A69FD00DBBEF0 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D9917226A69FD00DBBEF0 /* MainCoordinator.swift */; };
+		527D991A226A6B0100DBBEF0 /* Startable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D9919226A6B0100DBBEF0 /* Startable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +30,16 @@
 /* Begin PBXFileReference section */
 		527D98ED226A5A6F00DBBEF0 /* Glovo Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glovo Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		527D98F0226A5A6F00DBBEF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		527D98F2226A5A6F00DBBEF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		527D98F5226A5A6F00DBBEF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		527D98F7226A5A7100DBBEF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		527D98FA226A5A7100DBBEF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		527D98FC226A5A7100DBBEF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527D9901226A5A7100DBBEF0 /* Glovo ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Glovo ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		527D9905226A5A7100DBBEF0 /* Glovo_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glovo_ChallengeTests.swift; sourceTree = "<group>"; };
 		527D9907226A5A7100DBBEF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		527D9911226A679400DBBEF0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		527D9912226A679400DBBEF0 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		527D9917226A69FD00DBBEF0 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		527D9919226A6B0100DBBEF0 /* Startable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Startable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +81,10 @@
 		527D98EF226A5A6F00DBBEF0 /* Glovo Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				527D9916226A689000DBBEF0 /* coordinators */,
+				527D9915226A685B00DBBEF0 /* models */,
+				527D9910226A678200DBBEF0 /* views */,
 				527D98F0226A5A6F00DBBEF0 /* AppDelegate.swift */,
-				527D98F2226A5A6F00DBBEF0 /* ViewController.swift */,
-				527D98F4226A5A6F00DBBEF0 /* Main.storyboard */,
 				527D98F7226A5A7100DBBEF0 /* Assets.xcassets */,
 				527D98F9226A5A7100DBBEF0 /* LaunchScreen.storyboard */,
 				527D98FC226A5A7100DBBEF0 /* Info.plist */,
@@ -94,6 +99,31 @@
 				527D9907226A5A7100DBBEF0 /* Info.plist */,
 			);
 			path = "Glovo ChallengeTests";
+			sourceTree = "<group>";
+		};
+		527D9910226A678200DBBEF0 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				527D9911226A679400DBBEF0 /* MainViewController.swift */,
+				527D9912226A679400DBBEF0 /* MainViewController.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		527D9915226A685B00DBBEF0 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		527D9916226A689000DBBEF0 /* coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				527D9917226A69FD00DBBEF0 /* MainCoordinator.swift */,
+				527D9919226A6B0100DBBEF0 /* Startable.swift */,
+			);
+			path = coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				527D98FB226A5A7100DBBEF0 /* LaunchScreen.storyboard in Resources */,
+				527D9914226A679400DBBEF0 /* MainViewController.xib in Resources */,
 				527D98F8226A5A7100DBBEF0 /* Assets.xcassets in Resources */,
-				527D98F6226A5A6F00DBBEF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				527D98F3226A5A6F00DBBEF0 /* ViewController.swift in Sources */,
+				527D991A226A6B0100DBBEF0 /* Startable.swift in Sources */,
 				527D98F1226A5A6F00DBBEF0 /* AppDelegate.swift in Sources */,
+				527D9918226A69FD00DBBEF0 /* MainCoordinator.swift in Sources */,
+				527D9913226A679400DBBEF0 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +253,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		527D98F4226A5A6F00DBBEF0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				527D98F5226A5A6F00DBBEF0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		527D98F9226A5A7100DBBEF0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +390,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ns.fx.Glovo-Challenge";
+				PRODUCT_BUNDLE_IDENTIFIER = ns.fx.glovo.challenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -383,7 +407,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ns.fx.Glovo-Challenge";
+				PRODUCT_BUNDLE_IDENTIFIER = ns.fx.glovo.challenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
