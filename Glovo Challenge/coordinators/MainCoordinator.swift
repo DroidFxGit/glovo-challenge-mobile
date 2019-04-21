@@ -23,19 +23,34 @@ class MainCoordinator: Startable {
     
     fileprivate func configureMainViewController() {
         let mainViewController = MainViewController()
+        mainViewController.title = "Main Screen"
         mainViewController.delegate = self
         
         let navigationController = UINavigationController(rootViewController: mainViewController)
-        navigationController.navigationBar.isHidden = true
+        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.navigationItem.largeTitleDisplayMode = .automatic
         
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+    }
+    
+    fileprivate func presentPickerView(from view: UIViewController) {
+        let pickerView = PickerCityViewController()
+        pickerView.title = "Choose your City"
+        
+        let navigationController = UINavigationController(rootViewController: pickerView)
+        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.navigationItem.largeTitleDisplayMode = .automatic
+        
+        view.present(navigationController, animated: true, completion: nil)
     }
 }
 
 extension MainCoordinator: MainViewControllerDelegate {
     func didShowCitiesScreen(view: UIViewController) {
-        
+        DispatchQueue.main.async {
+            self.presentPickerView(from: view)
+        }
     }
     
     func didShowMapScreen(view: UIViewController) {

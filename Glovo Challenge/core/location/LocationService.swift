@@ -12,35 +12,30 @@ import CoreLocation
 class LocationService: NSObject {
     
     var currentLocation: CLLocation!
-    var updatedCoordinates: () -> () = {}
-    var addressObject: (_ address: CLPlacemark?, _ error: Error?) -> () = { address, error in }
+    var updatedCoordinates: (_ auhtorized: Bool) -> () = { authorized in }
+    typealias completionLocation = (_ address: CLPlacemark?, _ error: Error?) -> Void
     
-    private let locationManager = CLLocationManager()
+    private var locationManager = CLLocationManager()
     private let authStatus = CLLocationManager.authorizationStatus()
     
     override init() {
         super.init()
-        self.locationManager.delegate = self
-        self.locationManager.requestWhenInUseAuthorization()
+        
         self.locationManager.requestAlwaysAuthorization()
-        self.locationManager.startUpdatingLocation()
+        self.locationManager.delegate = self
     }
     
-    func getAddress() {
-        if authStatus == CLAuthorizationStatus.authorizedAlways || authStatus == CLAuthorizationStatus.authorizedWhenInUse {
-            self.currentLocation = locationManager.location
-            let geoCoder = CLGeocoder()
-            geoCoder.reverseGeocodeLocation(self.currentLocation) { [weak self] placeMark, error in
-                guard let strongSelf = self else { return }
-                
-                if let error = error {
-                    strongSelf.addressObject(nil, error)
-                    return
-                }
-                
-                if let address = placeMark?.first {
-                    strongSelf.addressObject(address, nil)
-                }
+    func getAddress(_ completion: @escaping completionLocation) {
+        self.currentLocation = locationManager.location
+        let geoCoder = CLGeocoder()
+        geoCoder.reverseGeocodeLocation(self.currentLocation) { placeMark, error in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            
+            if let address = placeMark?.first {
+                completion(address, nil)
             }
         }
     }
@@ -50,11 +45,13 @@ class LocationService: NSObject {
 extension LocationService: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         switch status {
-        case .restricted, .denied, .notDetermined:
-            print("locatization not authorized or not determined")
+        case .restricted, .notDetermined:
+            print("locatization cannot be determined yet")
+        case .denied:
+            updatedCoordinates(false)
         case .authorizedAlways, .authorizedWhenInUse:
             self.currentLocation = locationManager.location
-            updatedCoordinates()
+            updatedCoordinates(true)
         @unknown default:
             fatalError("localization cannot be determined")
         }

@@ -13,6 +13,8 @@
 		52140803226BA0550005D620 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52140802226BA0550005D620 /* Country.swift */; };
 		52140805226BA09F0005D620 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52140804226BA09F0005D620 /* City.swift */; };
 		52140808226BD2AF0005D620 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52140807226BD2AF0005D620 /* LocationService.swift */; };
+		525987DD226C39870097569A /* PickerCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525987DB226C39870097569A /* PickerCityViewController.swift */; };
+		525987DE226C39870097569A /* PickerCityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 525987DC226C39870097569A /* PickerCityViewController.xib */; };
 		527D98F1226A5A6F00DBBEF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D98F0226A5A6F00DBBEF0 /* AppDelegate.swift */; };
 		527D98F8226A5A7100DBBEF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527D98F7226A5A7100DBBEF0 /* Assets.xcassets */; };
 		527D98FB226A5A7100DBBEF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527D98F9226A5A7100DBBEF0 /* LaunchScreen.storyboard */; };
@@ -41,6 +43,8 @@
 		52140802226BA0550005D620 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		52140804226BA09F0005D620 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		52140807226BD2AF0005D620 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		525987DB226C39870097569A /* PickerCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerCityViewController.swift; sourceTree = "<group>"; };
+		525987DC226C39870097569A /* PickerCityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerCityViewController.xib; sourceTree = "<group>"; };
 		527D98ED226A5A6F00DBBEF0 /* Glovo Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glovo Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		527D98F0226A5A6F00DBBEF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		527D98F7226A5A7100DBBEF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +96,24 @@
 			path = location;
 			sourceTree = "<group>";
 		};
+		525987DF226C39A00097569A /* main */ = {
+			isa = PBXGroup;
+			children = (
+				527D9911226A679400DBBEF0 /* MainViewController.swift */,
+				527D9912226A679400DBBEF0 /* MainViewController.xib */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		525987E0226C39B30097569A /* picker */ = {
+			isa = PBXGroup;
+			children = (
+				525987DB226C39870097569A /* PickerCityViewController.swift */,
+				525987DC226C39870097569A /* PickerCityViewController.xib */,
+			);
+			path = picker;
+			sourceTree = "<group>";
+		};
 		527D98E4226A5A6F00DBBEF0 = {
 			isa = PBXGroup;
 			children = (
@@ -138,8 +160,8 @@
 		527D9910226A678200DBBEF0 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				527D9911226A679400DBBEF0 /* MainViewController.swift */,
-				527D9912226A679400DBBEF0 /* MainViewController.xib */,
+				525987DF226C39A00097569A /* main */,
+				525987E0226C39B30097569A /* picker */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -263,6 +285,7 @@
 				527D98FB226A5A7100DBBEF0 /* LaunchScreen.storyboard in Resources */,
 				527D9914226A679400DBBEF0 /* MainViewController.xib in Resources */,
 				527D98F8226A5A7100DBBEF0 /* Assets.xcassets in Resources */,
+				525987DE226C39870097569A /* PickerCityViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +306,7 @@
 				52140801226AA06E0005D620 /* LocationCitiesRouter.swift in Sources */,
 				52140803226BA0550005D620 /* Country.swift in Sources */,
 				521407FF226A9E400005D620 /* URLRequestConvertible.swift in Sources */,
+				525987DD226C39870097569A /* PickerCityViewController.swift in Sources */,
 				527D991A226A6B0100DBBEF0 /* Startable.swift in Sources */,
 				527D98F1226A5A6F00DBBEF0 /* AppDelegate.swift in Sources */,
 				521407FD226A9CB90005D620 /* BaseService.swift in Sources */,
@@ -445,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2692MDUFS2;
 				INFOPLIST_FILE = "Glovo Challenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,6 +487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2692MDUFS2;
 				INFOPLIST_FILE = "Glovo Challenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

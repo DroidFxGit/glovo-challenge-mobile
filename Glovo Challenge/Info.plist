@@ -4,7 +4,9 @@
 <dict>
 	<key>baseUrl</key>
 	<string>http://localhost:3000/api/</string>
-	<key>NSLocationAlwaysAndWhenInUsageDescription</key>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>this app requires permission to your location</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>this app requires permission to your location</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
