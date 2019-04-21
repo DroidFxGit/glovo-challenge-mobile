@@ -8,10 +8,16 @@
 
 import Foundation
 
+protocol MainViewModelDelegate: class {
+    func didShowError(error: Error)
+}
+
 class MainViewModel {
     
     private let citiesService = CitiesService()
     private let workingAreaService = WorkingAreaService()
+    
+    weak var delegate: MainViewModelDelegate?
     
     var cities: CitiesArray!
     var cityWorkingArea = [String]() {
@@ -23,23 +29,27 @@ class MainViewModel {
     var updatedWorkingArea: () -> () = {}
     
     func getCities() {
-        citiesService.getCities { response in
+        citiesService.getCities { [weak self] response in
+            guard let strongSelf = self else { return }
+            
             switch response {
             case .success(let response):
-                self.cities = response
+                strongSelf.cities = response
             case .failure(let error):
-                print("\(error)")
+                strongSelf.delegate?.didShowError(error: error)
             }
         }
     }
     
     func fetchWorkingArea(city: City) {
-        workingAreaService.getCity(code: city.code) { response in
+        workingAreaService.getCity(code: city.code) { [weak self] response in
+            guard let strongSelf = self else { return }
+            
             switch response {
             case .success(let response):
-                self.cityWorkingArea = response.workingArea
+                strongSelf.cityWorkingArea = response.workingArea
             case .failure(let error):
-                print("\(error)")
+                strongSelf.delegate?.didShowError(error: error)
             }
         }
     }

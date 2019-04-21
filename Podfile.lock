@@ -1,0 +1,20 @@
+PODS:
+  - PKHUD (5.2.1)
+  - Polyline (4.2.0)
+
+DEPENDENCIES:
+  - PKHUD (~> 5.0)
+  - Polyline (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PKHUD
+    - Polyline
+
+SPEC CHECKSUMS:
+  PKHUD: 4e6162c4c39ac367c6934e9855c6b4762ee16256
+  Polyline: 3d69f75bb136357e27291d439d0436c6ebda57a4
+
+PODFILE CHECKSUM: 260f3070bd7928ba50a8b4e6b24a5a178f500350
+
+COCOAPODS: 1.6.1
