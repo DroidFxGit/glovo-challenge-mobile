@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52125D0A226D0049006902E3 /* CountriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52125D09226D0049006902E3 /* CountriesService.swift */; };
+		52125D0C226D00AD006902E3 /* CitiesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52125D0B226D00AD006902E3 /* CitiesService.swift */; };
+		52125D0F226D0A04006902E3 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52125D0E226D0A04006902E3 /* MainViewModel.swift */; };
+		52125D11226D1DD8006902E3 /* WorkingAreaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52125D10226D1DD8006902E3 /* WorkingAreaService.swift */; };
 		521407FD226A9CB90005D620 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521407FC226A9CB90005D620 /* BaseService.swift */; };
 		521407FF226A9E400005D620 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521407FE226A9E400005D620 /* URLRequestConvertible.swift */; };
 		52140801226AA06E0005D620 /* LocationCitiesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52140800226AA06E0005D620 /* LocationCitiesRouter.swift */; };
@@ -15,6 +19,9 @@
 		52140808226BD2AF0005D620 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52140807226BD2AF0005D620 /* LocationService.swift */; };
 		525987DD226C39870097569A /* PickerCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525987DB226C39870097569A /* PickerCityViewController.swift */; };
 		525987DE226C39870097569A /* PickerCityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 525987DC226C39870097569A /* PickerCityViewController.xib */; };
+		525987E4226C3E540097569A /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525987E2226C3E540097569A /* CardViewController.swift */; };
+		525987E5226C3E540097569A /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 525987E3226C3E540097569A /* CardViewController.xib */; };
+		525987E7226C3EFE0097569A /* CardViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525987E6226C3EFE0097569A /* CardViewPresentable.swift */; };
 		527D98F1226A5A6F00DBBEF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D98F0226A5A6F00DBBEF0 /* AppDelegate.swift */; };
 		527D98F8226A5A7100DBBEF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527D98F7226A5A7100DBBEF0 /* Assets.xcassets */; };
 		527D98FB226A5A7100DBBEF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527D98F9226A5A7100DBBEF0 /* LaunchScreen.storyboard */; };
@@ -37,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52125D09226D0049006902E3 /* CountriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesService.swift; sourceTree = "<group>"; };
+		52125D0B226D00AD006902E3 /* CitiesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesService.swift; sourceTree = "<group>"; };
+		52125D0E226D0A04006902E3 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		52125D10226D1DD8006902E3 /* WorkingAreaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingAreaService.swift; sourceTree = "<group>"; };
 		521407FC226A9CB90005D620 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		521407FE226A9E400005D620 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
 		52140800226AA06E0005D620 /* LocationCitiesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCitiesRouter.swift; sourceTree = "<group>"; };
@@ -45,6 +56,9 @@
 		52140807226BD2AF0005D620 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		525987DB226C39870097569A /* PickerCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerCityViewController.swift; sourceTree = "<group>"; };
 		525987DC226C39870097569A /* PickerCityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerCityViewController.xib; sourceTree = "<group>"; };
+		525987E2226C3E540097569A /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		525987E3226C3E540097569A /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
+		525987E6226C3EFE0097569A /* CardViewPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewPresentable.swift; sourceTree = "<group>"; };
 		527D98ED226A5A6F00DBBEF0 /* Glovo Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glovo Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		527D98F0226A5A6F00DBBEF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		527D98F7226A5A7100DBBEF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,12 +92,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52125D0D226D085E006902E3 /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				52125D0E226D0A04006902E3 /* MainViewModel.swift */,
+			);
+			path = viewmodels;
+			sourceTree = "<group>";
+		};
 		521407FB226A96450005D620 /* networking */ = {
 			isa = PBXGroup;
 			children = (
 				521407FC226A9CB90005D620 /* BaseService.swift */,
 				521407FE226A9E400005D620 /* URLRequestConvertible.swift */,
 				52140800226AA06E0005D620 /* LocationCitiesRouter.swift */,
+				52125D09226D0049006902E3 /* CountriesService.swift */,
+				52125D0B226D00AD006902E3 /* CitiesService.swift */,
+				52125D10226D1DD8006902E3 /* WorkingAreaService.swift */,
 			);
 			path = networking;
 			sourceTree = "<group>";
@@ -114,6 +139,15 @@
 			path = picker;
 			sourceTree = "<group>";
 		};
+		525987E1226C3E390097569A /* info */ = {
+			isa = PBXGroup;
+			children = (
+				525987E2226C3E540097569A /* CardViewController.swift */,
+				525987E3226C3E540097569A /* CardViewController.xib */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
 		527D98E4226A5A6F00DBBEF0 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +174,7 @@
 				527D9916226A689000DBBEF0 /* coordinators */,
 				527D9915226A685B00DBBEF0 /* models */,
 				527D9910226A678200DBBEF0 /* views */,
+				52125D0D226D085E006902E3 /* viewmodels */,
 				527D98F0226A5A6F00DBBEF0 /* AppDelegate.swift */,
 				527D98F7226A5A7100DBBEF0 /* Assets.xcassets */,
 				527D98F9226A5A7100DBBEF0 /* LaunchScreen.storyboard */,
@@ -160,6 +195,7 @@
 		527D9910226A678200DBBEF0 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				525987E1226C3E390097569A /* info */,
 				525987DF226C39A00097569A /* main */,
 				525987E0226C39B30097569A /* picker */,
 			);
@@ -197,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				527D991D226A947C00DBBEF0 /* ConfigurationUtils.swift */,
+				525987E6226C3EFE0097569A /* CardViewPresentable.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -285,6 +322,7 @@
 				527D98FB226A5A7100DBBEF0 /* LaunchScreen.storyboard in Resources */,
 				527D9914226A679400DBBEF0 /* MainViewController.xib in Resources */,
 				527D98F8226A5A7100DBBEF0 /* Assets.xcassets in Resources */,
+				525987E5226C3E540097569A /* CardViewController.xib in Resources */,
 				525987DE226C39870097569A /* PickerCityViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,17 +341,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52125D0C226D00AD006902E3 /* CitiesService.swift in Sources */,
 				52140801226AA06E0005D620 /* LocationCitiesRouter.swift in Sources */,
 				52140803226BA0550005D620 /* Country.swift in Sources */,
 				521407FF226A9E400005D620 /* URLRequestConvertible.swift in Sources */,
 				525987DD226C39870097569A /* PickerCityViewController.swift in Sources */,
+				525987E7226C3EFE0097569A /* CardViewPresentable.swift in Sources */,
 				527D991A226A6B0100DBBEF0 /* Startable.swift in Sources */,
 				527D98F1226A5A6F00DBBEF0 /* AppDelegate.swift in Sources */,
+				52125D0F226D0A04006902E3 /* MainViewModel.swift in Sources */,
 				521407FD226A9CB90005D620 /* BaseService.swift in Sources */,
 				52140808226BD2AF0005D620 /* LocationService.swift in Sources */,
 				52140805226BA09F0005D620 /* City.swift in Sources */,
 				527D991E226A947C00DBBEF0 /* ConfigurationUtils.swift in Sources */,
+				525987E4226C3E540097569A /* CardViewController.swift in Sources */,
+				52125D11226D1DD8006902E3 /* WorkingAreaService.swift in Sources */,
 				527D9918226A69FD00DBBEF0 /* MainCoordinator.swift in Sources */,
+				52125D0A226D0049006902E3 /* CountriesService.swift in Sources */,
 				527D9913226A679400DBBEF0 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +515,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2692MDUFS2;
 				INFOPLIST_FILE = "Glovo Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,7 +523,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ns.fx.glovo.challenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -489,6 +534,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2692MDUFS2;
 				INFOPLIST_FILE = "Glovo Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,7 +542,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ns.fx.glovo.challenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

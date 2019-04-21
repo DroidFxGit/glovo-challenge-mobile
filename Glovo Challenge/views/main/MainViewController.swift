@@ -13,10 +13,16 @@ protocol MainViewControllerDelegate: class {
     func didShowMapScreen(view: UIViewController)
 }
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, CardViewPresentable {
 
     private let locationService = LocationService()
     weak var delegate: MainViewControllerDelegate?
+    var cardViewController = CardViewController(nibName:"CardViewController", bundle:nil)
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setupCardView()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

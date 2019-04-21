@@ -27,7 +27,7 @@ class MainCoordinator: Startable {
         mainViewController.delegate = self
         
         let navigationController = UINavigationController(rootViewController: mainViewController)
-        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.navigationBar.prefersLargeTitles = false
         navigationController.navigationItem.largeTitleDisplayMode = .automatic
         
         window?.rootViewController = navigationController

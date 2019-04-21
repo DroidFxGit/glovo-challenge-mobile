@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct City {
+struct City: Codable {
     var code: String
     var name: String
     var countryCode: String
