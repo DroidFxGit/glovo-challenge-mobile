@@ -9,8 +9,8 @@
 import UIKit
 
 protocol MainViewControllerDelegate: class {
-    func didShowCitiesScreen()
-    func didShowMapScreen()
+    func didShowCitiesScreen(view: UIViewController)
+    func didShowMapScreen(view: UIViewController)
 }
 
 class MainViewController: UIViewController {

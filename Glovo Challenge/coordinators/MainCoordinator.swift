@@ -34,9 +34,11 @@ class MainCoordinator: Startable {
 }
 
 extension MainCoordinator: MainViewControllerDelegate {
-    func didShowCitiesScreen() {
+    func didShowCitiesScreen(view: UIViewController) {
+        
     }
     
-    func didShowMapScreen() {
+    func didShowMapScreen(view: UIViewController) {
+        
     }
 }
