@@ -26,7 +26,8 @@ class MainViewModel {
         }
     }
     
-    var updatedWorkingArea: () -> () = {}
+    var updatedWorkingArea: () -> Void = {}
+    var updatedCities: () -> Void = {}
     
     func getCities() {
         citiesService.getCities { [weak self] response in
@@ -35,6 +36,7 @@ class MainViewModel {
             switch response {
             case .success(let response):
                 strongSelf.cities = response
+                strongSelf.updatedCities()
             case .failure(let error):
                 strongSelf.delegate?.didShowError(error: error)
             }

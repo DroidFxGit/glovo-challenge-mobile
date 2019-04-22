@@ -12,11 +12,11 @@ struct City: Codable {
     var code: String
     var name: String
     var countryCode: String
-    var currency: String
-    var enabled: Bool
-    var busy: Bool
-    var timeZone: String
-    var languageCode: String
+    var currency: String?
+    var enabled: Bool?
+    var busy: Bool?
+    var timeZone: String?
+    var languageCode: String?
     var workingArea: [String]
     
     enum CodingKeys: String, CodingKey {
@@ -37,11 +37,21 @@ struct City: Codable {
         code = try container.decode(String.self, forKey: .code)
         name = try container.decode(String.self, forKey: .name)
         countryCode = try container.decode(String.self, forKey: .countryCode)
-        currency = try container.decode(String.self, forKey: .currency)
-        enabled = try container.decode(Bool.self, forKey: .enabled)
-        busy = try container.decode(Bool.self, forKey: .busy)
-        timeZone = try container.decode(String.self, forKey: .timeZone)
-        languageCode = try container.decode(String.self, forKey: .languageCode)
-        workingArea = try container.decode([String].self, forKey: .name)
+        workingArea = try container.decode([String].self, forKey: .workingArea)
+        
+        //optional values
+        do {
+            currency = try container.decode(String.self, forKey: .currency)
+            enabled = try container.decode(Bool.self, forKey: .enabled)
+            busy = try container.decode(Bool.self, forKey: .busy)
+            timeZone = try container.decode(String.self, forKey: .timeZone)
+            languageCode = try container.decode(String.self, forKey: .languageCode)
+        } catch {
+            currency = nil
+            enabled = nil
+            busy = nil
+            timeZone = nil
+            languageCode = nil
+        }
     }
 }
